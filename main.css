@@ -1,0 +1,118 @@
+html{
+    font-family: 'Hanalei', cursive;
+    box-sizing: border-box;
+    font-size: 62.6%;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items:center;
+}
+.container-homepage{
+    align-items: center;
+    height: 100vh;
+    margin-top: 5em;
+}
+
+.homepage-logo{
+    grid-column: 2;
+    grid-row: 1;
+}
+.homepage-logo img{
+    border-radius: 200px 3000px 400px ;
+}
+.search-bar{
+    grid-column: 1/-1;
+    grid-row: 2;
+}
+.search-bar p{
+    color: rgb(26, 233, 7);
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin-top: 2.3rem;
+    text-align: right;
+    transition: 1s;
+    cursor: pointer;
+}
+.search-bar p:hover{
+    transition: 1s;
+    letter-spacing: .4px;
+    color: rgb(236, 75, 12);
+}
+.search-bar input{
+    width: 66vw;
+    padding-left: .75em;
+}
+.homepage-search-bar input{
+    height: 11.8rem;
+}
+.results-search-bar input{
+height: 5rem;
+margin-bottom: 1em;
+margin-top: 3em;
+}
+
+.results-logo{
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.results-logo img{
+    width: 200px;
+    border-radius: 500px 500px 500px 500px;
+}
+.search-bar input[type="text"]{
+    font-size: 2.5em;
+    font-family: "font awesome\ 5 free",Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: blueviolet;
+    box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, .1);
+    border: 0px solid transparent;
+    border-radius: 0.5rem;
+}
+.search-bar input[type="text"]::placeholder{
+    font-family: "font awesome\ 5 free",Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: royalblue;
+}
+.search-bar input[type="text"]:focus{
+    outline: none;
+    box-shadow: 2px 3px 20px 10px rgba(0, 0, 0, .3);
+}
+.recent-posts-wrapper{
+    grid-column: 1/-1;
+    grid-row: 3;
+}
+.recent-posts-heading {
+    color: rgb(4, 20, 238);
+    margin-bottom: 3em;
+    font-size: 1.4em;
+}
+.recent-post-heading{
+    margin-bottom: 20px;
+}
+.recent-posts{
+    display: grid;
+    width: 66vw;
+    grid-template-columns: repeat(auto-fit , minmax(100px,1fr));
+    grid-gap: 2.5rem;
+}
+.recent-post-title{
+    color:darkgreen;
+    font-weight: 1.4rem;
+    font-size: 1.2rem;
+}
+.recent-post-category{
+    color: darkorange;
+    font-weight: 600;
+}

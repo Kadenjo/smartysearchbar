@@ -1,0 +1,39 @@
+.container-results{
+   
+    margin-top: 2em;
+}
+.results-posts-wrapper{
+
+grid-row: 3;
+grid-column: 1/-1;
+width: 66vw;
+}
+.post{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.category-name{
+    color: purple;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+.result-post-title a{
+    color: red;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+.result-post-links-wrapper{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(100px,1fr));
+    grid-gap: 2rem;
+}
+.result-post-link{
+    color: rgb(73, 24, 105);
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+.result-post-link:hover{
+    text-decoration: underline;
+}
